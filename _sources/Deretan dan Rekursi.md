@@ -70,38 +70,36 @@ Deret dengan pola di mana setiap suku merupakan jumlah dua suku sebelumnya.
 ### Penjumlahan Deretan
 
 Jumlah deretan
+
 $$
 a_m, a_{m+1}, a_{m+2}, \ldots, a_n
 $$
+
 adalah
+
 $$
 a_m+a_{m+1}+a_{m+2}+\ldots+a_n
 $$
+
 atau dalam notasi sumasi:
+
 $$
 \sum_{k=m}^n a_k
 $$
+
 $k$ adalah indeks summasi, m adalah batas bawah indeks, $n$ adalah batas atas indeks
 
 Contoh :
+
 Contoh 2: Berapa nilai $\sum_{k=1}^{5} k^2$ ?
+
 Jawaban:
+
 $$
 \sum_{k=1}^5 k^2=1^2+2^2+3^2+4^2+5^2=1+4+9+16+25=55
 $$
 
-\begin{aligned}
-&\text { TABLE } 2 \text { Some Useful Summation Formulae. }\\
-&\begin{array}{l|l}
-\hline \text { Sum } & \text { Closed Form } \\
-\hline \sum_{k=0}^n a r^k(r \neq 0) & \frac{a r^{n+1}-a}{r-1}, r \neq 1 \\
-\sum_{k=1}^n k & \frac{n(n+1)}{2} \\
-\sum_{k=1}^n k^2 & \frac{n(n+1)(2 n+1)}{6} \\
-\sum_{k=1}^n k^3 & \frac{n^2(n+1)^2}{4} \\
-\sum_{k=0}^{\infty} x^k,|x|<1 & \frac{1}{1-x} \\
-\sum_{k=1}^{\infty} k x^{k-1},|x|<1 & \frac{1}{(1-x)^2}
-\end{array}
-\end{aligned}
+![](https://cdn.mathpix.com/snip/images/b-XssEsrWNlqZlLYOqjwYzqQThqvLcqWVak2Dcmgtbc.original.fullsize.png)
 
 ### Sumasi ganda
 
