@@ -7,12 +7,7 @@ Himpunan adalah kumpulan objek. Objek-objek dalam himpunan disebut elemen atau a
 
 Notasi Bilangan Tertentu
 
-$\begin{tabular}{ll}
-$\mathbb{N}=$ & himpunan bilangan asli, \\
-$\mathbb{Z}=$ & himpunan bilangan rasional, \\
-$\mathbb{Q}=$ & himpunan bilangan rasional, \\
-$\mathbb{R}=$ & himpunan bilangan riil.
-\end{tabular}$
+![](https://cdn.mathpix.com/snip/images/oGfOGgaxcnXdXbkZlEfJHMp0yUXmm9ROqOwhAbACJAc.original.fullsize.png)
 
 * Bilangan rasional adalah bilangan yang dapat dinyatakan sebagai rasio dua bilangan bulat (dengan bilangan bulat kedua tidak sama dengan nol).contoh
 
