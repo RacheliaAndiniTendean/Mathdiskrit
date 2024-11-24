@@ -54,5 +54,5 @@ Sebagian besar identitas Boolean memiliki bentuk AND (perkallian) serta bentuk O
 
 Tiga Gerbang AND, OR, dan NOT
 
-![Screenshot 2024-10-10 165406](https://hackmd.io/_uploads/rylDVmBk1x.png)
+![](https://cdn.mathpix.com/snip/images/OURYYCaqIotAsiVDrfimDr_0nEqgzufFu7zEVS7gzY8.original.fullsize.png)
 
