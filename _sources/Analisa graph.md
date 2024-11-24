@@ -15,7 +15,7 @@ contoh graph yang berbobot yaitu jarak antar kota, seperti bangkalan ke sampang 
 
 ## contoh:
 
-![Screenshot 2024-11-11 133536](https://hackmd.io/_uploads/r1-RHQJfJl.png)
+![original image](https://cdn.mathpix.com/snip/images/2XgBue-ahlsabJv_kV0h96Nlm_emFcgFAkteEwcPeaY.original.fullsize.png)
 
 analisa node terpenting dalam graph tersebut:
 
@@ -27,14 +27,19 @@ Degree centrality adalah jumlah edge yang terkoneksi pada suatu node yang mewaki
 - lebih besar derajatnya(degree),maka lebih penting node itu dalam suatu jaringan
 - hanya sebagian kecil node yang memiliki derajat tinggi dalam jaringan
 
-![Screenshot 2024-11-11 141049](https://hackmd.io/_uploads/Hyh-RXJfke.png)
+
+Degree Centrality = $$C_D\left(v_i\right)=d_i=\sum_i A_{i j}$$
+Normalisasi Degree Centrality = 
+$$ C_D^{\prime}\left(v_i\right)=d_i /(n-1)$$
 
 
 ### Closeness centrality
 
 Closeness centrality adalah nilai kedekatan antara suatu node dengan node lain dalam jaringan dengan menhitung rata rata dari jarak relasi node-node tersebut. skor closeness centrality mewakili kecepatan dalm penyebaran informasi
 
-![Screenshot 2024-11-11 140458](https://hackmd.io/_uploads/H1xDpQyGkx.png)
+
+Average Distance : $$D_{\text {avg }}\left(v_i\right)=\frac{1}{n-1} \sum_{j \neq i}^n g\left(v_i, v_j\right)$$
+Closeness Centrality : $$C_C\left(v_i\right)=\left[\frac{1}{n-1} \sum_{j \neq i}^n g\left(v_i, v_j\right)\right]^{-1}=\frac{n-1}{\sum_{j \neq i}^n g\left(v_i, v_j\right)}$$
 
 ### Betweenness Centrality
 
@@ -49,13 +54,21 @@ Ukuran ini juga dapat digunakan untuk mengidentifikasi boundary spanners, yaitu
 
 * betweenness centrality
 
-![Screenshot 2024-11-11 143618](https://hackmd.io/_uploads/SJzWVNkfkg.png)
+$$
+C_B\left(v_i\right)=\sum_{v_s \neq v_i \neq v_t \in V, s<t} \frac{\sigma_{s t}\left(v_i\right)}{\sigma_{s t}}
+$$
 
-![Screenshot 2024-11-11 143859](https://hackmd.io/_uploads/SywoE4kGye.png)
+$\sigma_{s t}$ Jumlah lintasan terpendek antara s dan t 
+$\sigma_{s t}\left(v_i\right)$ Jumlah lintasan terpendek antara $s$ dan $t$ yang melewati $\mathrm{v}_{\mathrm{i}}$
+
+![](https://cdn.mathpix.com/snip/images/WA7CwKeZ6lES3q-BX6XAuc4XAOiePU3P8EnbY9c3TLk.original.fullsize.png)
 
 * normalisasi betweenness centrality
 
-![Screenshot 2024-11-11 144636](https://hackmd.io/_uploads/S19PLN1Mke.png)
+$$
+C_B^{\prime}(i)=\frac{C_B(i)}{(n-1)(n-2) / 2} .
+$$
+
 
 
 

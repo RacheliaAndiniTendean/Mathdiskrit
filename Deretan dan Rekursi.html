@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Analisa graph &#8212; Matematika Diskrit</title>
+    <title>Deretan dan Rekursif &#8212; Matematika Diskrit</title>
   
   
   
@@ -59,11 +59,10 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'Analisa graph';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Deretan dan Rekursi';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Deretan dan Rekursif" href="Deretan%20dan%20Rekursi.html" />
-    <link rel="prev" title="Aljabar Boolean &amp; Gerbang Logika" href="Aljabar.html" />
+    <link rel="prev" title="Analisa graph" href="Analisa%20graph.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -185,8 +184,8 @@
 <li class="toctree-l1"><a class="reference internal" href="ALGORITMA.html">Algoritma</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Logika.html">Logika Matematika</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Aljabar.html">Aljabar Boolean &amp; Gerbang Logika</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Analisa graph</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Deretan%20dan%20Rekursi.html">Deretan dan Rekursif</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Analisa%20graph.html">Analisa graph</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Deretan dan Rekursif</a></li>
 </ul>
 
     </div>
@@ -258,7 +257,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FAnalisa graph.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FDeretan dan Rekursi.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -288,7 +287,7 @@
       
       
       
-      <li><a href="_sources/Analisa graph.md" target="_blank"
+      <li><a href="_sources/Deretan dan Rekursi.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -372,7 +371,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Analisa graph</h1>
+    <h1>Deretan dan Rekursif</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -382,11 +381,28 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian">Pengertian</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh">contoh:</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#degree-centrality">Degree Centrality</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#closeness-centrality">Closeness centrality</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#betweenness-centrality">Betweenness Centrality</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deretan">Deretan</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian">Pengertian</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-contoh-deretan-dan-formulanya">Contoh-contoh deretan dan formulanya</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#deret-aritmetika">Deret Aritmetika</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#deret-geometri">Deret Geometri</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#deret-bilangan-kuadrat">Deret Bilangan Kuadrat</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#deret-bilangan-kubik">Deret Bilangan Kubik</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#deret-fibonacci">Deret Fibonacci</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#penjumlahan-deretan">Penjumlahan Deretan</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sumasi-ganda">Sumasi ganda</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rekursif">Rekursif</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Pengertian</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fungsi-rekursif">Fungsi Rekursif</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#basis">1. Basis</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#rekurens">2. Rekurens</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#latihan">Latihan</a></li>
 </ul>
 </li>
 </ul>
@@ -400,62 +416,210 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="analisa-graph">
-<h1>Analisa graph<a class="headerlink" href="#analisa-graph" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="deretan-dan-rekursif">
+<h1>Deretan dan Rekursif<a class="headerlink" href="#deretan-dan-rekursif" title="Link to this heading">#</a></h1>
+<section id="deretan">
+<h2>Deretan<a class="headerlink" href="#deretan" title="Link to this heading">#</a></h2>
 <section id="pengertian">
-<h2>Pengertian<a class="headerlink" href="#pengertian" title="Link to this heading">#</a></h2>
-<p>Graph adalah sekumpulan node yang saling terhubung.</p>
-<p>contoh graph seperti jaringan komputer yang saling terhubung, orang orang dalam sosial media yang saling berhubungan.</p>
-<p>contoh graph yang berbobot yaitu jarak antar kota, seperti bangkalan ke sampang 10km, sampang ke sumenep 20km, bangkalan ke sumenep 35km.Bobot menunjukkan jarak jalan, yang dimana akan menghasilkan analisis jarak lintaran terpendek.</p>
-</section>
-<section id="contoh">
-<h2>contoh:<a class="headerlink" href="#contoh" title="Link to this heading">#</a></h2>
-<p><img alt="original image" src="https://cdn.mathpix.com/snip/images/2XgBue-ahlsabJv_kV0h96Nlm_emFcgFAkteEwcPeaY.original.fullsize.png" /></p>
-<p>analisa node terpenting dalam graph tersebut:</p>
-<section id="degree-centrality">
-<h3>Degree Centrality<a class="headerlink" href="#degree-centrality" title="Link to this heading">#</a></h3>
-<p>Degree centrality adalah jumlah edge yang terkoneksi pada suatu node yang mewakili interaksi.</p>
+<h3>Pengertian<a class="headerlink" href="#pengertian" title="Link to this heading">#</a></h3>
+<p>Deretan adalah suatu urutan elemen atau objek yang susun secara teratur berdasarkan suatu aturan tertentu . Elemen dalam deretan biasanya berupa angka, huruf, simbol atau objek lainnya. dan urutannya dapat didasarkan pada pola, nilai, atau hubungan tertentu.</p>
+<p>Definisi: Sebuah deretan adalah fungsi dari subset suatu himpunan bilangan bulat (biasanya N atau P) ke sebuah himpunan S.</p>
+<p>N = {1, 2, 3, 4, … }
+S misalnya {2, 4, 6, 8, …},   {1/3, 1/5, 1/7, …},  dsb</p>
 <ul class="simple">
-<li><p>Pentingnya node ditentukan oleh jumlah node yang berdekatan dengan node tersebut.</p></li>
+<li><p>Notasi deretan: {an}</p></li>
 </ul>
-<ul class="simple">
-<li><p>lebih besar derajatnya(degree),maka lebih penting node itu dalam suatu jaringan</p></li>
-<li><p>hanya sebagian kecil node yang memiliki derajat tinggi dalam jaringan</p></li>
-</ul>
-<p>Degree Centrality = $<span class="math notranslate nohighlight">\(C_D\left(v_i\right)=d_i=\sum_i A_{i j}\)</span><span class="math notranslate nohighlight">\(
-Normalisasi Degree Centrality = 
-\)</span><span class="math notranslate nohighlight">\( C_D^{\prime}\left(v_i\right)=d_i /(n-1)\)</span>$</p>
+<p>Deretan umumnya dinyatakan dalam suatu formula, misalnya:
+an = 2n
+an = 1/n
+an = 7 – 3n</p>
+<p>Dalam konteks matematika, deretan sering merujuk pada barisan bilangan, yaitu kumpulan bilangan yang disusun dalam suatu pola tertentu.
+Misalnya:</p>
+<p>Deretan bilangan ganjil: 1,3,5,7,…
+Deretan bilangan genap: 2,4,6,8,…
+Deretan bilangan yang membentuk deret aritmetika: 3,6,9,12….</p>
 </section>
-<section id="closeness-centrality">
-<h3>Closeness centrality<a class="headerlink" href="#closeness-centrality" title="Link to this heading">#</a></h3>
-<p>Closeness centrality adalah nilai kedekatan antara suatu node dengan node lain dalam jaringan dengan menhitung rata rata dari jarak relasi node-node tersebut. skor closeness centrality mewakili kecepatan dalm penyebaran informasi</p>
-<p>Average Distance : $<span class="math notranslate nohighlight">\(D_{\text {avg }}\left(v_i\right)=\frac{1}{n-1} \sum_{j \neq i}^n g\left(v_i, v_j\right)\)</span><span class="math notranslate nohighlight">\(
-Closeness Centrality : \)</span><span class="math notranslate nohighlight">\(C_C\left(v_i\right)=\left[\frac{1}{n-1} \sum_{j \neq i}^n g\left(v_i, v_j\right)\right]^{-1}=\frac{n-1}{\sum_{j \neq i}^n g\left(v_i, v_j\right)}\)</span>$</p>
-</section>
-<section id="betweenness-centrality">
-<h3>Betweenness Centrality<a class="headerlink" href="#betweenness-centrality" title="Link to this heading">#</a></h3>
-<p>skor betweeness centrality mewakili seberapa besar informasi yang tersebar dari suatu aktor. semakin besar skor, artinya aktor tersebut semakin berperan dalam penyebaran informasi</p>
-<p>Semakin banyak lintasan yang harus melewati persimpangan itu (misal tidak ada jalan alternatif), maka semakin penting arti persimpangan tersebut. hal ini menandakan seberapa besar suatu node diperlukan sebagai penghubung dalam penyebaran informasi di dalam jaringan</p>
-<p>Ukuran ini juga dapat digunakan untuk mengidentifikasi boundary spanners, yaitu orang atau node yang berperan sebagai penghubung (jembatan) antara dua komunitas</p>
+<section id="contoh-contoh-deretan-dan-formulanya">
+<h3>Contoh-contoh deretan dan formulanya<a class="headerlink" href="#contoh-contoh-deretan-dan-formulanya" title="Link to this heading">#</a></h3>
+<section id="deret-aritmetika">
+<h4>Deret Aritmetika<a class="headerlink" href="#deret-aritmetika" title="Link to this heading">#</a></h4>
+<p>Deret dengan pola kenaikan atau penurunan tetap.</p>
 <ul class="simple">
-<li><p>Menghitung jumlah lintasan terpendek yang melewati suatu node</p></li>
-<li><p>Node dengan  betweenness  tinggi  adalah  penting dalam komunikasi dan penyebaran informasi</p></li>
-<li><p>betweenness centrality</p></li>
+<li><p>Contoh: 2,5,8,11,14,…</p></li>
+<li></li>
+<li><p>Rumus suku ke-n:$<span class="math notranslate nohighlight">\(𝑈_𝑛=𝑎+(𝑛−1)⋅𝑏\)</span>$
+Di mana:</p></li>
 </ul>
+<p>𝑎: suku pertama
+𝑏: beda (selisih antar suku
+𝑛: nomor suku yang dicari</p>
+</section>
+<section id="deret-geometri">
+<h4>Deret Geometri<a class="headerlink" href="#deret-geometri" title="Link to this heading">#</a></h4>
+<p>Deret dengan pola kelipatan tetap.</p>
+<ul class="simple">
+<li><p>Contoh: 3,6,12,24,48,…</p></li>
+<li><p>Rumus suku ke-n:
+$<span class="math notranslate nohighlight">\(𝑈_𝑛=𝑎⋅𝑟^(𝑛−1)\)</span>$
+Di mana:
+𝑎: suku pertama
+𝑟: rasio (perbandingan antar suku,
+𝑛: nomor suku yang dicari</p></li>
+</ul>
+</section>
+<section id="deret-bilangan-kuadrat">
+<h4>Deret Bilangan Kuadrat<a class="headerlink" href="#deret-bilangan-kuadrat" title="Link to this heading">#</a></h4>
+<p>Deret dengan pola nilai berupa kuadrat bilangan bulat.</p>
+<ul class="simple">
+<li><p>Contoh: 1,4,9,16,25,…</p></li>
+<li><p>Rumus suku ke-n: $<span class="math notranslate nohighlight">\(𝑈_𝑛=𝑛^2\)</span>$</p></li>
+</ul>
+</section>
+<section id="deret-bilangan-kubik">
+<h4>Deret Bilangan Kubik<a class="headerlink" href="#deret-bilangan-kubik" title="Link to this heading">#</a></h4>
+<p>Deret dengan pola nilai berupa kubik bilangan bulat.</p>
+<ul class="simple">
+<li><p>Contoh: 1,8,27,64,125,…</p></li>
+<li><p>Rumus suku ke-n:$<span class="math notranslate nohighlight">\(𝑈_𝑛=𝑛^3\)</span>$</p></li>
+</ul>
+</section>
+<section id="deret-fibonacci">
+<h4>Deret Fibonacci<a class="headerlink" href="#deret-fibonacci" title="Link to this heading">#</a></h4>
+<p>Deret dengan pola di mana setiap suku merupakan jumlah dua suku sebelumnya.</p>
+<ul class="simple">
+<li><p>Contoh: 0,1,1,2,3,5,8,…</p></li>
+<li><p>Rumus suku ke -n (rekursif): $<span class="math notranslate nohighlight">\( 𝐹_𝑛=𝐹_(𝑛−1)+𝐹_(𝑛−2),𝐹_0=0,𝐹_1=1\)</span>$</p></li>
+</ul>
+</section>
+</section>
+<section id="penjumlahan-deretan">
+<h3>Penjumlahan Deretan<a class="headerlink" href="#penjumlahan-deretan" title="Link to this heading">#</a></h3>
+<p>Jumlah deretan
+$<span class="math notranslate nohighlight">\(
+a_m, a_{m+1}, a_{m+2}, \ldots, a_n
+\)</span><span class="math notranslate nohighlight">\(
+adalah
+\)</span><span class="math notranslate nohighlight">\(
+a_m+a_{m+1}+a_{m+2}+\ldots+a_n
+\)</span><span class="math notranslate nohighlight">\(
+atau dalam notasi sumasi:
+\)</span><span class="math notranslate nohighlight">\(
+\sum_{k=m}^n a_k
+\)</span><span class="math notranslate nohighlight">\(
+\)</span>k<span class="math notranslate nohighlight">\( adalah indeks summasi, m adalah batas bawah indeks, \)</span>n$ adalah batas atas indeks</p>
+<p>Contoh :
+Contoh 2: Berapa nilai <span class="math notranslate nohighlight">\(\sum_{k=1}^{5} k^2\)</span> ?
+Jawaban:
+$<span class="math notranslate nohighlight">\(
+\sum_{k=1}^5 k^2=1^2+2^2+3^2+4^2+5^2=1+4+9+16+25=55
+\)</span>$</p>
+<p>\begin{aligned}
+&amp;\text { TABLE } 2 \text { Some Useful Summation Formulae. }\
+&amp;\begin{array}{l|l}
+\hline \text { Sum } &amp; \text { Closed Form } \
+\hline \sum_{k=0}^n a r^k(r \neq 0) &amp; \frac{a r^{n+1}-a}{r-1}, r \neq 1 \
+\sum_{k=1}^n k &amp; \frac{n(n+1)}{2} \
+\sum_{k=1}^n k^2 &amp; \frac{n(n+1)(2 n+1)}{6} \
+\sum_{k=1}^n k^3 &amp; \frac{n^2(n+1)^2}{4} \
+\sum_{k=0}^{\infty} x^k,|x|&lt;1 &amp; \frac{1}{1-x} \
+\sum_{k=1}^{\infty} k x^{k-1},|x|&lt;1 &amp; \frac{1}{(1-x)^2}
+\end{array}
+\end{aligned}</p>
+</section>
+<section id="sumasi-ganda">
+<h3>Sumasi ganda<a class="headerlink" href="#sumasi-ganda" title="Link to this heading">#</a></h3>
+<p>Di dalam algoritma, kita perlu menghitung berapa kali suatu operasi tertentu dilakukan di dalam sebuah kalang bersarang (nested loop). Penjumlahan semua operasi di dalam kalang bersarang dinyatakan dalam bentuk sumasi ganda.</p>
+<p>Contoh: <span class="math notranslate nohighlight">\(\sum_{i=1}^4 \sum_{j=1}^3 i j\)</span></p>
+<p>Untuk menghitung sumasi ganda, mula-mula ekspansi sumasi terdalam, lalu dilanjukan dengan sumasi terluar:
+$<span class="math notranslate nohighlight">\(
+\sum_{i=1}^4 \sum_{j=1}^3 i j=\sum_{i=1}^4(i+2 i+3 i)=\sum_{i=1}^4 6 i=6+12+18+24=60
+\)</span>$</p>
+</section>
+</section>
+<section id="rekursif">
+<h2>Rekursif<a class="headerlink" href="#rekursif" title="Link to this heading">#</a></h2>
+<section id="id1">
+<h3>Pengertian<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<p>Sebuah objek dikatakan rekursif  (recursive) jika ia didefinisikan dalam terminologi dirinya sendiri.</p>
+<p>Proses mendefinisikan objek dalam terminologi dirinya sendiri disebut rekursi (recursion).</p>
+</section>
+<section id="fungsi-rekursif">
+<h3>Fungsi Rekursif<a class="headerlink" href="#fungsi-rekursif" title="Link to this heading">#</a></h3>
+<p>Fungsi rekursif didefinisikan oleh dua bagian:</p>
+<section id="basis">
+<h4>1. Basis<a class="headerlink" href="#basis" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>Bagian yang berisi nilai fungsi yang terdefinisi secara eksplisit.</p></li>
+<li><p>Bagian ini juga sekaligus menghentikan rekursif (dan memberikan sebuah nilai yang terdefinisi pada fungsi rekursif).</p></li>
+</ul>
+</section>
+<section id="rekurens">
+<h4>2. Rekurens<a class="headerlink" href="#rekurens" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>Bagian ini mendefinisikan fungsi dalam terminologi dirinya sendiri.</p></li>
+<li><p>Berisi kaidah untuk menemukan nilai fungsi pada suatu input dari nilai-nilai lainnya pada input yang lebih kecil.</p></li>
+</ul>
+<p>Contoh : Misalkan <span class="math notranslate nohighlight">\(f\)</span> didefinsikan secara rekusif sbb
+$<span class="math notranslate nohighlight">\(
+f(n)=\left\{\begin{array}{cll}
+3 &amp; , n=0 &amp; \text { basis } \\
+2 f(n-1)+4 &amp; , n&gt;0 &amp; \text { rekurens }
+\end{array}\right.
+\)</span>$</p>
+<p>Tentukan nilai <span class="math notranslate nohighlight">\(\mathrm{f}(4)\)</span> !
+$<span class="math notranslate nohighlight">\(
+\text { Solusi: } \quad \begin{aligned}
+&amp; f(4)=2 f(3)+4 \\
+= &amp; 2(2 f(2)+4)+4 \\
+= &amp; 2(2(2 f(1)+4)+4)+4 \\
+= &amp; 2(2(2(2 f(0)+4)+4)+4)+4 \\
+= &amp; 2(2(2(2 \cdot 3+4)+4)+4)+4 \\
+= &amp; 2(2(2(10)+4)+4)+4 \\
+= &amp; 2(2(24)+4)+4 \\
+= &amp; 2(52)+4 \\
+= &amp; 108
+\end{aligned}
+\)</span>$</p>
 <div class="math notranslate nohighlight">
-\[
-C_B\left(v_i\right)=\sum_{v_s \neq v_i \neq v_t \in V, s&lt;t} \frac{\sigma_{s t}\left(v_i\right)}{\sigma_{s t}}
-\]</div>
-<p><span class="math notranslate nohighlight">\(\sigma_{s t}\)</span> Jumlah lintasan terpendek antara s dan t
-<span class="math notranslate nohighlight">\(\sigma_{s t}\left(v_i\right)\)</span> Jumlah lintasan terpendek antara <span class="math notranslate nohighlight">\(s\)</span> dan <span class="math notranslate nohighlight">\(t\)</span> yang melewati <span class="math notranslate nohighlight">\(\mathrm{v}_{\mathrm{i}}\)</span></p>
-<p><img alt="" src="https://cdn.mathpix.com/snip/images/WA7CwKeZ6lES3q-BX6XAuc4XAOiePU3P8EnbY9c3TLk.original.fullsize.png" /></p>
-<ul class="simple">
-<li><p>normalisasi betweenness centrality</p></li>
-</ul>
-<div class="math notranslate nohighlight">
-\[
-C_B^{\prime}(i)=\frac{C_B(i)}{(n-1)(n-2) / 2} .
-\]</div>
+\[\begin{split}\begin{aligned}
+&amp;\text { Cara lain menghitungnya: }\\
+&amp;\begin{aligned}
+&amp; \mathrm{f}(0)=3 \\
+&amp; \mathrm{f}(1)=2 \mathrm{f}(0)+4=2 \cdot 3+4=10 \\
+&amp; \mathrm{f}(2)=2 \mathrm{f}(1)+4=2 \cdot 10+4=24 \\
+&amp; \mathrm{f}(3)=2 \mathrm{f}(2)+4=2 \cdot 24+4=52 \\
+&amp; \mathrm{f}(4)=2 \mathrm{f}(3)+4=2 \cdot 52+4=108
+\end{aligned}\\
+&amp;\text { Jadi, } f(4)=108
+\end{aligned}\end{split}\]</div>
+</section>
+</section>
+<section id="latihan">
+<h3>Latihan<a class="headerlink" href="#latihan" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Definisikan an secara rekursif , yang dalam hal ini a adalah bilangan riil tidak-nol dan n adalah bilangan bulat tidak-negatif.</p></li>
+<li><p>Nyatakan a x b secara rekursif, yang dalam hal ini a dan b adalah bilangan bulat positif.</p></li>
+</ol>
+<p>Solusi :</p>
+<p><span class="math notranslate nohighlight">\(1 \cdot a^n=\underbrace{a \cdot a \cdot a \cdot \ldots a}_{n \mathrm{kali}}=a \cdot \underbrace{a \cdot a \cdot a \cdot \ldots a}_{n-1 \mathrm{kali}}=a \cdot a^{n-1}\)</span>
+sehingga:
+$<span class="math notranslate nohighlight">\(
+a^n=\left\{\begin{array}{cc}
+1 &amp; , n=0 \\
+a \cdot a^{n-1} &amp; , n&gt;0
+\end{array}\right.
+\)</span><span class="math notranslate nohighlight">\(
+2.
+\)</span><span class="math notranslate nohighlight">\(
+\begin{aligned}
+a \cdot b &amp; =\underbrace{b+b+b+\ldots+b}_{a \text { kali }} \\
+&amp; =b+\underbrace{b+b+\ldots+b}_{a-1 \mathrm{kali}} \\
+&amp; =b+(a-1) b
+\end{aligned} \longrightarrow a \cdot b=\left\{\begin{array}{cc}
+b &amp; , a=1 \\
+b+(a-1) b &amp; , a&gt;1
+\end{array}\right. \text {. }
+\)</span>$</p>
 </section>
 </section>
 </section>
@@ -491,22 +655,13 @@ C_B^{\prime}(i)=\frac{C_B(i)}{(n-1)(n-2) / 2} .
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="Aljabar.html"
+       href="Analisa%20graph.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Aljabar Boolean &amp; Gerbang Logika</p>
+        <p class="prev-next-title">Analisa graph</p>
       </div>
-    </a>
-    <a class="right-next"
-       href="Deretan%20dan%20Rekursi.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Deretan dan Rekursif</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -524,11 +679,28 @@ C_B^{\prime}(i)=\frac{C_B(i)}{(n-1)(n-2) / 2} .
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian">Pengertian</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh">contoh:</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#degree-centrality">Degree Centrality</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#closeness-centrality">Closeness centrality</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#betweenness-centrality">Betweenness Centrality</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deretan">Deretan</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian">Pengertian</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-contoh-deretan-dan-formulanya">Contoh-contoh deretan dan formulanya</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#deret-aritmetika">Deret Aritmetika</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#deret-geometri">Deret Geometri</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#deret-bilangan-kuadrat">Deret Bilangan Kuadrat</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#deret-bilangan-kubik">Deret Bilangan Kubik</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#deret-fibonacci">Deret Fibonacci</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#penjumlahan-deretan">Penjumlahan Deretan</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sumasi-ganda">Sumasi ganda</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rekursif">Rekursif</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Pengertian</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fungsi-rekursif">Fungsi Rekursif</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#basis">1. Basis</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#rekurens">2. Rekurens</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#latihan">Latihan</a></li>
 </ul>
 </li>
 </ul>
