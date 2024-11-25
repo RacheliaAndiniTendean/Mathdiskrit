@@ -99,7 +99,14 @@ $$
 \sum_{k=1}^5 k^2=1^2+2^2+3^2+4^2+5^2=1+4+9+16+25=55
 $$
 
-![](https://cdn.mathpix.com/snip/images/b-XssEsrWNlqZlLYOqjwYzqQThqvLcqWVak2Dcmgtbc.original.fullsize.png)
+| Sum | Closed Form |
+| :--- | :--- |
+| $\sum_{k=0}^n a r^k(r \neq 0)$ | $\frac{a r^{n+1}-a}{r-1}, r \neq 1$ |
+| $\sum_{k=1}^n k$ | $\frac{n(n+1)}{2}$ |
+| $\sum_{k=1}^n k^2$ | $\frac{n(n+1)(2 n+1)}{6}$ |
+| $\sum_{k=1}^n k^3$ | $\frac{n^2(n+1)^2}{4}$ |
+| $\sum_{k=0}^{\infty} x^k,\|x\|<1$ | $\frac{1}{1-x}$ |
+| $\sum_{k=1}^{\infty} k x^{k-1},\|x\|<1$ | $\frac{1}{(1-x)^2}$ |
 
 ### Sumasi ganda
 
