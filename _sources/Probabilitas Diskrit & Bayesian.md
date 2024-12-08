@@ -103,7 +103,10 @@ $P(T \mid \ldots)=\frac{0.017875}{0.053625} \approx 0.333(33.3 \%)$
 ### Jawaban Menghitung Menggunakan Rumus Teorema Bayes
 
 Teorema Bayes
-Teorema Bayes digunakan untuk menghitung probabilitas posterior $(P(H \mid X))$  berdasarkan probabilitas prior dan probabilitas kondisional. Rumus umum:
+Teorema Bayes digunakan untuk menghitung probabilitas posterior $(P(H \mid X))$  berdasarkan probabilitas prior dan probabilitas kondisional.
+
+Rumus umum:
+
 $P(H \mid X)=\frac{P(X \mid H) \cdot P(H)}{P(X)}$
 
 Di mana:
