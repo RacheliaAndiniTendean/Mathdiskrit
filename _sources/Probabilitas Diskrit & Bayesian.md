@@ -88,44 +88,37 @@ $$
 
 **Probabilitas Posterior (Naive Bayes)**
 1. Untuk Hipertensi (H):
-
 $$
 P(H \mid \text { Paruh Baya, Sangat Tinggi })=P(\text { Paruh Baya } \mid H) \cdot P(\text { Sangat Tinggi } \mid H) \cdot P(H)
 $$
 
-Substitusi nilai:
-
+**Substitusi nilai:**
 $$
 P(H \mid \ldots)=0.25 \cdot 0.286 \cdot 0.5=0.03575
 $$
 
 2. Untuk Tidak Hipertensi (T):
-
 $$
 P(T \mid \text { Paruh Baya, Sangat Tinggi })=P(\text { Paruh Baya } \mid T) \cdot P(\text { Sangat Tinggi } \mid T) \cdot P(T)
 $$
 
-Substitusi nilai:
-
+**Substitusi nilai:**
 $$
 P(T \mid \ldots)=0.25 \cdot 0.143 \cdot 0.5=0.017875
 $$
 
 **Normalisasi**
 Untuk menghitung probabilitas akhir:
-
 $$
 \text { Total }=P(H \mid \ldots)+P(T \mid \ldots)=0.03575+0.017875=0.053625
 $$
 
 Probabilitas Hipertensi (H):
-
 $$
 P(H \mid \ldots)=\frac{0.03575}{0.053625} \approx 0.666(66.6 \%)
 $$
 
 Probabilitas Tidak Hipertensi ( T ):
-
 $$
 P(T \mid \ldots)=\frac{0.017875}{0.053625} \approx 0.333(33.3 \%)
 $$
@@ -168,7 +161,6 @@ Data:
 **Langkah 1**: Hitung $P(X \mid H)$ dan $P(X \mid T)$
 
 Untuk $P(X \mid H)$ :
-
 $$
 \begin{gathered}
 P(X \mid H)=P(\text { Paruh Baya } \mid H) \cdot P(\text { Sangat Tinggi } \mid H) \\
@@ -177,7 +169,6 @@ P(X \mid H)=0.25 \cdot 0.286=0.0715
 $$
 
 Untuk $P(X \mid T)$ :
-
 $$
 \begin{gathered}
 P(X \mid T)=P(\text { Paruh Baya } \mid T) \cdot P(\text { Sangat Tinggi } \mid T) \\
@@ -186,13 +177,11 @@ P(X \mid T)=0.25 \cdot 0.143=0.03575
 $$
 
 **Langkah 2**: Hitung Probabilitas Prior $(P(H)$ dan $P(T)$ )
-
 $$
 P(H)=0.5, \quad P(T)=0.5
 $$
 
 **Langkah 3**: Hitung $P(X)$ (Normalisasi Total Probabilitas)
-
 $$
 \begin{gathered}
 P(X)=P(X \mid H) \cdot P(H)+P(X \mid T) \cdot P(T) \\
@@ -204,6 +193,7 @@ $$
 
 Untuk Hipertensi $(P(H \mid X)$ ):
 
+
 $$
 \begin{gathered}
 P(H \mid X)=\frac{P(X \mid H) \cdot P(H)}{P(X)} \\
@@ -212,6 +202,7 @@ P(H \mid X)=\frac{0.0715 \cdot 0.5}{0.053625}=\frac{0.03575}{0.053625} \approx 0
 $$
 
 Untuk Tidak Hipertensi $(P(T \mid X)$ ):
+
 
 $$
 \begin{gathered}
