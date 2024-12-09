@@ -6,7 +6,9 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Search - Matematika Diskrit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Social Network Analysis &#8212; Matematika Diskrit</title>
   
   
   
@@ -55,12 +57,13 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'search';</script>
-  <script src="_static/searchtools.js"></script>
-  <script src="_static/language_data.js"></script>
-  <script src="searchindex.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Social Network Analysis';</script>
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="#" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Deretan dan Rekursif" href="Deretan%20dan%20Rekursi.html" />
+    <link rel="prev" title="Aljabar Boolean &amp; Gerbang Logika" href="Aljabar.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -92,7 +95,7 @@
     <div class="search-button__overlay"></div>
     <div class="search-button__search-container">
 <form class="bd-search d-flex align-items-center"
-      action="#"
+      action="search.html"
       method="get">
   <i class="fa-solid fa-magnifying-glass"></i>
   <input type="search"
@@ -122,8 +125,6 @@
     <div class="bd-container__inner bd-page-width">
       
       
-      
-        
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -180,12 +181,12 @@
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="HIMPUNAN.html">Himpunan</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ALGORITMA.html">Algoritma</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Logika.html">Logika Matematika</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Aljabar.html">Aljabar Boolean &amp; Gerbang Logika</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Social%20Network%20Analysis.html">Social Network Analysis</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Social Network Analysis</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Deretan%20dan%20Rekursi.html">Deretan dan Rekursif</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Probabilitas%20Diskrit%20%26%20Bayesian.html">Probabilitas Diskrit &amp; Bayesian</a></li>
 </ul>
@@ -259,7 +260,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fsearch.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FSocial Network Analysis.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -271,6 +272,54 @@
   </span>
 <span class="btn__text-container">Open issue</span>
 </a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/Social Network Analysis.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
 </li>
       
   </ul>
@@ -312,7 +361,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -321,42 +372,133 @@ document.write(`
 </div>
               
               
-  <div class="bd-search-container">
-    <h1>Search</h1>
-    <noscript>
-      <div class="admonition error">
-        <p class="admonition-title">Error</p>
-        <p>Please activate JavaScript to enable the search functionality.</p>
-      </div>
-    </noscript>
-    
-<form class="bd-search d-flex align-items-center"
-      action="#"
-      method="get">
-  <i class="fa-solid fa-magnifying-glass"></i>
-  <input type="search"
-         class="form-control"
-         name="q"
-         id="search-input"
-         placeholder="Search this book..."
-         aria-label="Search this book..."
-         autocomplete="off"
-         autocorrect="off"
-         autocapitalize="off"
-         spellcheck="false"/>
-  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form>
-    <div id="search-results"></div>
-  </div>
-  <script>
-    // Activate the search field on page load
-    let searchInput = document.querySelector("form.bd-search input");
-    if (searchInput) {
-        searchInput.focus();
-        searchInput.select();
-        console.log("[PST]: Set focus on search field.");
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Social Network Analysis</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#graph">Graph</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh">contoh:</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#degree-centrality">Degree Centrality</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#closeness-centrality">Closeness centrality</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#betweenness-centrality">Betweenness Centrality</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="social-network-analysis">
+<h1>Social Network Analysis<a class="headerlink" href="#social-network-analysis" title="Link to this heading">#</a></h1>
+<p>Social Network Analysis merupakan bidang kajian yang mengekplorasitentang hubungan manusia dengan menggunakan teori graf. Implementasi Social Network Analysis dapat menjelaskan relasi atau hubungan antar aktor melalui visualisasi berbentuk graf. Relasi dalam analisis jaringan sosial dapat diproses dalam bentuk perhitungan yang disebut centrality dalam sebuah jaringan sosial sesuai dengan posisi masing-masing aktor di dalam struktur jaringan tersebut</p>
+<section id="graph">
+<h2>Graph<a class="headerlink" href="#graph" title="Link to this heading">#</a></h2>
+<p>Graph adalah sekumpulan node yang saling terhubung.</p>
+<p>contoh graph seperti jaringan komputer yang saling terhubung, orang orang dalam sosial media yang saling berhubungan.</p>
+<p>contoh graph yang berbobot yaitu jarak antar kota, seperti bangkalan ke sampang 10km, sampang ke sumenep 20km, bangkalan ke sumenep 35km.Bobot menunjukkan jarak jalan, yang dimana akan menghasilkan analisis jarak lintaran terpendek.</p>
+</section>
+<section id="contoh">
+<h2>contoh:<a class="headerlink" href="#contoh" title="Link to this heading">#</a></h2>
+<p><img alt="original image" src="https://cdn.mathpix.com/snip/images/2XgBue-ahlsabJv_kV0h96Nlm_emFcgFAkteEwcPeaY.original.fullsize.png" /></p>
+<p>analisa node terpenting dalam graph tersebut:</p>
+<section id="degree-centrality">
+<h3>Degree Centrality<a class="headerlink" href="#degree-centrality" title="Link to this heading">#</a></h3>
+<p>Degree centrality adalah jumlah edge yang terkoneksi pada suatu node yang mewakili interaksi.</p>
+<ul class="simple">
+<li><p>Pentingnya node ditentukan oleh jumlah node yang berdekatan dengan node tersebut.</p></li>
+</ul>
+<ul class="simple">
+<li><p>lebih besar derajatnya(degree),maka lebih penting node itu dalam suatu jaringan</p></li>
+<li><p>hanya sebagian kecil node yang memiliki derajat tinggi dalam jaringan</p></li>
+</ul>
+<p>Degree Centrality =</p>
+<div class="math notranslate nohighlight">
+\[
+C_D\left(v_i\right)=d_i=\sum_i A_{i j}
+\]</div>
+<p>Normalisasi Degree Centrality =
+$<span class="math notranslate nohighlight">\(
+C_D^{\prime}\left(v_i\right)=d_i /(n-1)
+\)</span>$</p>
+</section>
+<section id="closeness-centrality">
+<h3>Closeness centrality<a class="headerlink" href="#closeness-centrality" title="Link to this heading">#</a></h3>
+<p>Closeness centrality adalah nilai kedekatan antara suatu node dengan node lain dalam jaringan dengan menhitung rata rata dari jarak relasi node-node tersebut. skor closeness centrality mewakili kecepatan dalm penyebaran informasi</p>
+<p>Average Distance :</p>
+<div class="math notranslate nohighlight">
+\[
+D_{\text {avg }}\left(v_i\right)=\frac{1}{n-1} \sum_{j \neq i}^n g\left(v_i, v_j\right)
+\]</div>
+<p>Closeness Centrality :</p>
+<div class="math notranslate nohighlight">
+\[
+C_C\left(v_i\right)=\left[\frac{1}{n-1} \sum_{j \neq i}^n g\left(v_i, v_j\right)\right]^{-1}=\frac{n-1}{\sum_{j \neq i}^n g\left(v_i, v_j\right)}
+\]</div>
+</section>
+<section id="betweenness-centrality">
+<h3>Betweenness Centrality<a class="headerlink" href="#betweenness-centrality" title="Link to this heading">#</a></h3>
+<p>skor betweeness centrality mewakili seberapa besar informasi yang tersebar dari suatu aktor. semakin besar skor, artinya aktor tersebut semakin berperan dalam penyebaran informasi</p>
+<p>Semakin banyak lintasan yang harus melewati persimpangan itu (misal tidak ada jalan alternatif), maka semakin penting arti persimpangan tersebut. hal ini menandakan seberapa besar suatu node diperlukan sebagai penghubung dalam penyebaran informasi di dalam jaringan</p>
+<p>Ukuran ini juga dapat digunakan untuk mengidentifikasi boundary spanners, yaitu orang atau node yang berperan sebagai penghubung (jembatan) antara dua komunitas</p>
+<ul class="simple">
+<li><p>Menghitung jumlah lintasan terpendek yang melewati suatu node</p></li>
+<li><p>Node dengan  betweenness  tinggi  adalah  penting dalam komunikasi dan penyebaran informasi</p></li>
+<li><p>betweenness centrality</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+C_B\left(v_i\right)=\sum_{v_s \neq v_i \neq v_t \in V, s&lt;t} \frac{\sigma_{s t}\left(v_i\right)}{\sigma_{s t}}
+\]</div>
+<p><span class="math notranslate nohighlight">\(\sigma_{s t}\)</span> Jumlah lintasan terpendek antara s dan t
+<span class="math notranslate nohighlight">\(\sigma_{s t}\left(v_i\right)\)</span> Jumlah lintasan terpendek antara <span class="math notranslate nohighlight">\(s\)</span> dan <span class="math notranslate nohighlight">\(t\)</span> yang melewati <span class="math notranslate nohighlight">\(\mathrm{v}_{\mathrm{i}}\)</span></p>
+<p><img alt="" src="https://cdn.mathpix.com/snip/images/WA7CwKeZ6lES3q-BX6XAuc4XAOiePU3P8EnbY9c3TLk.original.fullsize.png" /></p>
+<ul class="simple">
+<li><p>normalisasi betweenness centrality</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+C_B^{\prime}(i)=\frac{C_B(i)}{(n-1)(n-2) / 2} .
+\]</div>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
     }
-  </script>
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
 
               
               
@@ -365,12 +507,51 @@ document.write(`
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="Aljabar.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Aljabar Boolean &amp; Gerbang Logika</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Deretan%20dan%20Rekursi.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Deretan dan Rekursif</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#graph">Graph</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh">contoh:</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#degree-centrality">Degree Centrality</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#closeness-centrality">Closeness centrality</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#betweenness-centrality">Betweenness Centrality</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
