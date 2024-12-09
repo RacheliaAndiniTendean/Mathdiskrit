@@ -10,7 +10,10 @@ title: Probabilitas Diskrit & Bayesian
 **Probabilitas diskrit** adalah cabang dari teori probabilitas yang berfokus pada variabel acak yang memiliki nilai terhitung dan terbatas. Dalam konteks ini, probabilitas diskrit menggambarkan kemungkinan hasil dari percobaan yang menghasilkan nilai-nilai tertentu. Misalnya, hasil dari lemparan dadu atau jumlah panggilan telepon yang diterima dalam satu jam adalah contoh variabel diskrit.
 
 **Probabilitas Bayesian** adalah pendekatan dalam teori probabilitas yang menggabungkan informasi baru dengan pengetahuan sebelumnya untuk memperbarui kepercayaan terhadap suatu hipotesis. Ini didasarkan pada Teorema Bayes, yang menyatakan bahwa probabilitas suatu hipotesis $H$ setelah melihat data $X$ (dikenal sebagai posterior probability) dapat dihitung dengan rumus:
-$P(H \mid X)=\frac{P(X \mid H) \cdot P(H)}{P(X)}$
+
+$$
+P(H \mid X)=\frac{P(X \mid H) \cdot P(H)}{P(X)}
+$$
 
 Di mana:
 - $P(H \mid X)$ adalah probabilitas hipotesis setelah data diperoleh (posterior).
