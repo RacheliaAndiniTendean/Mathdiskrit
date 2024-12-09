@@ -59,69 +59,102 @@ Informasi Awal
 
 1. Probabilitas $P($ Usia Paruh Baya $\mid H)$ :
 - Dari 4 data Hipertensi, Usia Paruh Baya muncul 1 kali (Baris 4).
+
+
 $$
 P($ Usia Paruh Baya $\mid H)=1 / 4=0.25
 $$
+
 
 2. Probabilitas $P($ Sangat Tinggi $\mid H)$ :
 
 - Dari 4 data Hipertensi (H), Tekanan Darah Sangat Tinggi muncul 1 kali.
 
+
 $$
 P(\text { Sangat Tinggi } \mid H)=\frac{1+1}{4+3}=\frac{2}{7} \approx 0.286
 $$
 
+
 3. Probabilitas $P$ (Usia Paruh Baya $\mid T)$ :
 - Dari 4 data Tidak Hipertensi (T), Usia Paruh Baya muncul 1 kali.
+
 
 $$
 P(\text { Paruh Baya } \mid T)=\frac{\text { Frekuensi Paruh Baya pada } \mathrm{T}}{\text { Total Frekuensi } \mathrm{T}}=\frac{1}{4}=0.25
 $$
 
+
 4. Probabilitas $P($ Sangat Tinggi $\mid T)$ :
 - Dari 4 data Tidak Hipertensi (T), Tekanan Darah Sangat Tinggi muncul 0 kali.
+
 
 $$
 P(\text { Sangat Tinggi } \mid T)=\frac{0+1}{4+3}=\frac{1}{7} \approx 0.143
 $$
 
 
+
 **Probabilitas Posterior (Naive Bayes)**
+
 1. Untuk Hipertensi (H):
+
+
 $$
 P(H \mid \text { Paruh Baya, Sangat Tinggi })=P(\text { Paruh Baya } \mid H) \cdot P(\text { Sangat Tinggi } \mid H) \cdot P(H)
 $$
 
+
+
 **Substitusi nilai:**
+
+
 $$
 P(H \mid \ldots)=0.25 \cdot 0.286 \cdot 0.5=0.03575
 $$
 
+
 2. Untuk Tidak Hipertensi (T):
+
+
 $$
 P(T \mid \text { Paruh Baya, Sangat Tinggi })=P(\text { Paruh Baya } \mid T) \cdot P(\text { Sangat Tinggi } \mid T) \cdot P(T)
 $$
 
+
 **Substitusi nilai:**
+
+
 $$
 P(T \mid \ldots)=0.25 \cdot 0.143 \cdot 0.5=0.017875
 $$
 
+
+
 **Normalisasi**
 Untuk menghitung probabilitas akhir:
+
+
 $$
 \text { Total }=P(H \mid \ldots)+P(T \mid \ldots)=0.03575+0.017875=0.053625
 $$
 
+
 Probabilitas Hipertensi (H):
+
+
 $$
 P(H \mid \ldots)=\frac{0.03575}{0.053625} \approx 0.666(66.6 \%)
 $$
 
+
 Probabilitas Tidak Hipertensi ( T ):
+
+
 $$
 P(T \mid \ldots)=\frac{0.017875}{0.053625} \approx 0.333(33.3 \%)
 $$
+
 
 **Kesimpulan : **
 
@@ -136,9 +169,11 @@ Teorema Bayes digunakan untuk menghitung probabilitas posterior $(P(H \mid X))$ 
 
 Rumus umum:
 
+
 $$
 P(H \mid X)=\frac{P(X \mid H) \cdot P(H)}{P(X)}
 $$
+
 
 Di mana:
 - $\quad P(H \mid X)$ : Probabilitas seseorang memiliki Hipertensi (H) diberikan data $X$ (fitur yang diamati seperti Usia Paruh Baya dan Tekanan Darah Sangat Tinggi).
@@ -161,6 +196,8 @@ Data:
 **Langkah 1**: Hitung $P(X \mid H)$ dan $P(X \mid T)$
 
 Untuk $P(X \mid H)$ :
+
+
 $$
 \begin{gathered}
 P(X \mid H)=P(\text { Paruh Baya } \mid H) \cdot P(\text { Sangat Tinggi } \mid H) \\
@@ -168,7 +205,10 @@ P(X \mid H)=0.25 \cdot 0.286=0.0715
 \end{gathered}
 $$
 
+
 Untuk $P(X \mid T)$ :
+
+
 $$
 \begin{gathered}
 P(X \mid T)=P(\text { Paruh Baya } \mid T) \cdot P(\text { Sangat Tinggi } \mid T) \\
@@ -176,18 +216,23 @@ P(X \mid T)=0.25 \cdot 0.143=0.03575
 \end{gathered}
 $$
 
-**Langkah 2**: Hitung Probabilitas Prior $(P(H)$ dan $P(T)$ )
+**Langkah 2**: Hitung Probabilitas Prior $(P(H)$ dan $P(T))$
+
 $$
 P(H)=0.5, \quad P(T)=0.5
 $$
 
+
 **Langkah 3**: Hitung $P(X)$ (Normalisasi Total Probabilitas)
+
+
 $$
 \begin{gathered}
 P(X)=P(X \mid H) \cdot P(H)+P(X \mid T) \cdot P(T) \\
 P(X)=(0.0715 \cdot 0.5)+(0.03575 \cdot 0.5)=0.03575+0.017875=0.053625
 \end{gathered}
 $$
+
 
 **Langkah 4**: Hitung Posterior Menggunakan Teorema Bayes
 
