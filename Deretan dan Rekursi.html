@@ -62,6 +62,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'Deretan dan Rekursi';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Probabilitas Diskrit &amp; Bayesian" href="Probabilitas%20Diskrit%20%26%20Bayesian.html" />
     <link rel="prev" title="Analisa graph" href="Analisa%20graph.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -187,6 +188,7 @@
 <li class="toctree-l1"><a class="reference internal" href="Aljabar.html">Aljabar Boolean &amp; Gerbang Logika</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Analisa%20graph.html">Analisa graph</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Deretan dan Rekursif</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Probabilitas%20Diskrit%20%26%20Bayesian.html">Probabilitas Diskrit &amp; Bayesian</a></li>
 </ul>
 
     </div>
@@ -403,7 +405,6 @@ document.write(`
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#rekurens">2. Rekurens</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#latihan">Latihan</a></li>
 </ul>
 </li>
 </ul>
@@ -447,49 +448,66 @@ Deretan bilangan yang membentuk deret aritmetika: 3,6,9,12….</p>
 <p>Deret dengan pola kenaikan atau penurunan tetap.</p>
 <ul class="simple">
 <li><p>Contoh: 2,5,8,11,14,…</p></li>
-<li></li>
-<li><p>Rumus suku ke-n:$<span class="math notranslate nohighlight">\(𝑈_𝑛=𝑎+(𝑛−1)⋅𝑏\)</span>$
-Di mana:</p></li>
+<li><p>Rumus suku ke-n:</p></li>
 </ul>
-<p>𝑎: suku pertama
-𝑏: beda (selisih antar suku
-𝑛: nomor suku yang dicari</p>
+<div class="math notranslate nohighlight">
+\[
+𝑈_𝑛=𝑎+(𝑛−1)⋅𝑏
+\]</div>
+<p>Di mana:</p>
+<p>𝑎: suku pertama</p>
+<p>𝑏: beda (selisih antar suku</p>
+<p>𝑛: nomor suku yang dicari</p>
 </section>
 <section id="deret-geometri">
 <h4>Deret Geometri<a class="headerlink" href="#deret-geometri" title="Link to this heading">#</a></h4>
 <p>Deret dengan pola kelipatan tetap.</p>
 <ul class="simple">
 <li><p>Contoh: 3,6,12,24,48,…</p></li>
-<li><p>Rumus suku ke-n:
-$<span class="math notranslate nohighlight">\(𝑈_𝑛=𝑎⋅𝑟^(𝑛−1)\)</span>$
-Di mana:
-𝑎: suku pertama
-𝑟: rasio (perbandingan antar suku,
-𝑛: nomor suku yang dicari</p></li>
+<li><p>Rumus suku ke-n:</p></li>
 </ul>
+<div class="math notranslate nohighlight">
+\[
+𝑈_𝑛=𝑎⋅𝑟^(𝑛−1)
+\]</div>
+<p>Di mana:</p>
+<p>𝑎: suku pertama</p>
+<p>𝑟: rasio (perbandingan antar suku,</p>
+<p>𝑛: nomor suku yang dicari</p>
 </section>
 <section id="deret-bilangan-kuadrat">
 <h4>Deret Bilangan Kuadrat<a class="headerlink" href="#deret-bilangan-kuadrat" title="Link to this heading">#</a></h4>
 <p>Deret dengan pola nilai berupa kuadrat bilangan bulat.</p>
 <ul class="simple">
 <li><p>Contoh: 1,4,9,16,25,…</p></li>
-<li><p>Rumus suku ke-n: $<span class="math notranslate nohighlight">\(𝑈_𝑛=𝑛^2\)</span>$</p></li>
+<li><p>Rumus suku ke-n:</p></li>
 </ul>
+<div class="math notranslate nohighlight">
+\[
+ 𝑈_𝑛=𝑛^2
+ \]</div>
 </section>
 <section id="deret-bilangan-kubik">
 <h4>Deret Bilangan Kubik<a class="headerlink" href="#deret-bilangan-kubik" title="Link to this heading">#</a></h4>
 <p>Deret dengan pola nilai berupa kubik bilangan bulat.</p>
 <ul class="simple">
 <li><p>Contoh: 1,8,27,64,125,…</p></li>
-<li><p>Rumus suku ke-n:$<span class="math notranslate nohighlight">\(𝑈_𝑛=𝑛^3\)</span>$</p></li>
+<li><p>Rumus suku ke-n:</p></li>
 </ul>
+<div class="math notranslate nohighlight">
+\[
+𝑈_𝑛=𝑛^3
+\]</div>
 </section>
 <section id="deret-fibonacci">
 <h4>Deret Fibonacci<a class="headerlink" href="#deret-fibonacci" title="Link to this heading">#</a></h4>
 <p>Deret dengan pola di mana setiap suku merupakan jumlah dua suku sebelumnya.</p>
 <ul class="simple">
 <li><p>Contoh: 0,1,1,2,3,5,8,…</p></li>
-<li><p>Rumus suku ke -n (rekursif): $<span class="math notranslate nohighlight">\( 𝐹_𝑛=𝐹_(𝑛−1)+𝐹_(𝑛−2),𝐹_0=0,𝐹_1=1\)</span>$</p></li>
+<li><p>Rumus suku ke -n (rekursif):
+$<span class="math notranslate nohighlight">\(
+𝐹_𝑛=𝐹_(𝑛−1)+𝐹_(𝑛−2),𝐹_0=0,𝐹_1=1
+\)</span>$</p></li>
 </ul>
 </section>
 </section>
@@ -551,10 +569,11 @@ a_m+a_{m+1}+a_{m+2}+\ldots+a_n
 <h3>Sumasi ganda<a class="headerlink" href="#sumasi-ganda" title="Link to this heading">#</a></h3>
 <p>Di dalam algoritma, kita perlu menghitung berapa kali suatu operasi tertentu dilakukan di dalam sebuah kalang bersarang (nested loop). Penjumlahan semua operasi di dalam kalang bersarang dinyatakan dalam bentuk sumasi ganda.</p>
 <p>Contoh: <span class="math notranslate nohighlight">\(\sum_{i=1}^4 \sum_{j=1}^3 i j\)</span></p>
-<p>Untuk menghitung sumasi ganda, mula-mula ekspansi sumasi terdalam, lalu dilanjukan dengan sumasi terluar:
-$<span class="math notranslate nohighlight">\(
+<p>Untuk menghitung sumasi ganda, mula-mula ekspansi sumasi terdalam, lalu dilanjukan dengan sumasi terluar:</p>
+<div class="math notranslate nohighlight">
+\[
 \sum_{i=1}^4 \sum_{j=1}^3 i j=\sum_{i=1}^4(i+2 i+3 i)=\sum_{i=1}^4 6 i=6+12+18+24=60
-\)</span>$</p>
+\]</div>
 </section>
 </section>
 <section id="rekursif">
@@ -580,15 +599,17 @@ $<span class="math notranslate nohighlight">\(
 <li><p>Bagian ini mendefinisikan fungsi dalam terminologi dirinya sendiri.</p></li>
 <li><p>Berisi kaidah untuk menemukan nilai fungsi pada suatu input dari nilai-nilai lainnya pada input yang lebih kecil.</p></li>
 </ul>
-<p>Contoh : Misalkan <span class="math notranslate nohighlight">\(f\)</span> didefinsikan secara rekusif sbb
-$<span class="math notranslate nohighlight">\(
+<p>Contoh : Misalkan <span class="math notranslate nohighlight">\(f\)</span> didefinsikan secara rekusif sbb</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
 f(n)=\left\{\begin{array}{cll}
 3 &amp; , n=0 &amp; \text { basis } \\
 2 f(n-1)+4 &amp; , n&gt;0 &amp; \text { rekurens }
 \end{array}\right.
-\)</span>$</p>
-<p>Tentukan nilai <span class="math notranslate nohighlight">\(\mathrm{f}(4)\)</span> !
-$<span class="math notranslate nohighlight">\(
+\end{split}\]</div>
+<p>Tentukan nilai <span class="math notranslate nohighlight">\(\mathrm{f}(4)\)</span> !</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
 \text { Solusi: } \quad \begin{aligned}
 &amp; f(4)=2 f(3)+4 \\
 = &amp; 2(2 f(2)+4)+4 \\
@@ -600,9 +621,10 @@ $<span class="math notranslate nohighlight">\(
 = &amp; 2(52)+4 \\
 = &amp; 108
 \end{aligned}
-\)</span>$</p>
+\end{split}\]</div>
 <div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
+\[\begin{split}
+\begin{aligned}
 &amp;\text { Cara lain menghitungnya: }\\
 &amp;\begin{aligned}
 &amp; \mathrm{f}(0)=3 \\
@@ -612,35 +634,9 @@ $<span class="math notranslate nohighlight">\(
 &amp; \mathrm{f}(4)=2 \mathrm{f}(3)+4=2 \cdot 52+4=108
 \end{aligned}\\
 &amp;\text { Jadi, } f(4)=108
-\end{aligned}\end{split}\]</div>
+\end{aligned}
+\end{split}\]</div>
 </section>
-</section>
-<section id="latihan">
-<h3>Latihan<a class="headerlink" href="#latihan" title="Link to this heading">#</a></h3>
-<ol class="arabic simple">
-<li><p>Definisikan an secara rekursif , yang dalam hal ini a adalah bilangan riil tidak-nol dan n adalah bilangan bulat tidak-negatif.</p></li>
-<li><p>Nyatakan a x b secara rekursif, yang dalam hal ini a dan b adalah bilangan bulat positif.</p></li>
-</ol>
-<p>Solusi :</p>
-<p><span class="math notranslate nohighlight">\(1 \cdot a^n=\underbrace{a \cdot a \cdot a \cdot \ldots a}_{n \mathrm{kali}}=a \cdot \underbrace{a \cdot a \cdot a \cdot \ldots a}_{n-1 \mathrm{kali}}=a \cdot a^{n-1}\)</span>
-sehingga:
-$<span class="math notranslate nohighlight">\(
-a^n=\left\{\begin{array}{cc}
-1 &amp; , n=0 \\
-a \cdot a^{n-1} &amp; , n&gt;0
-\end{array}\right.
-\)</span><span class="math notranslate nohighlight">\(
-2.
-\)</span><span class="math notranslate nohighlight">\(
-\begin{aligned}
-a \cdot b &amp; =\underbrace{b+b+b+\ldots+b}_{a \text { kali }} \\
-&amp; =b+\underbrace{b+b+\ldots+b}_{a-1 \mathrm{kali}} \\
-&amp; =b+(a-1) b
-\end{aligned} \longrightarrow a \cdot b=\left\{\begin{array}{cc}
-b &amp; , a=1 \\
-b+(a-1) b &amp; , a&gt;1
-\end{array}\right. \text {. }
-\)</span>$</p>
 </section>
 </section>
 </section>
@@ -684,6 +680,15 @@ b+(a-1) b &amp; , a&gt;1
         <p class="prev-next-title">Analisa graph</p>
       </div>
     </a>
+    <a class="right-next"
+       href="Probabilitas%20Diskrit%20%26%20Bayesian.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Probabilitas Diskrit &amp; Bayesian</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
@@ -721,7 +726,6 @@ b+(a-1) b &amp; , a&gt;1
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#rekurens">2. Rekurens</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#latihan">Latihan</a></li>
 </ul>
 </li>
 </ul>

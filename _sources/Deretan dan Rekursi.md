@@ -33,38 +33,73 @@ Deretan bilangan yang membentuk deret aritmetika: 3,6,9,12....
 
 #### Deret Aritmetika
 Deret dengan pola kenaikan atau penurunan tetap.
-- Contoh: 2,5,8,11,14,…- 
-- Rumus suku ke-n:$$𝑈_𝑛=𝑎+(𝑛−1)⋅𝑏$$
-Di mana:
+
+- Contoh: 2,5,8,11,14,…
+
+- Rumus suku ke-n:
+
+$$
+𝑈_𝑛=𝑎+(𝑛−1)⋅𝑏
+$$
+
+Di mana:
+
 𝑎: suku pertama 
+
 𝑏: beda (selisih antar suku
+
 𝑛: nomor suku yang dicari
 
 #### Deret Geometri
 
 Deret dengan pola kelipatan tetap.
-* Contoh: 3,6,12,24,48,…
-* Rumus suku ke-n:$$𝑈_𝑛=𝑎⋅𝑟^(𝑛−1)$$
+
+* Contoh: 3,6,12,24,48,…
+
+* Rumus suku ke-n:
+
+$$
+𝑈_𝑛=𝑎⋅𝑟^(𝑛−1)
+$$
+
 Di mana:
+
 𝑎: suku pertama
+
 𝑟: rasio (perbandingan antar suku,
+
 𝑛: nomor suku yang dicari
 
 #### Deret Bilangan Kuadrat
 Deret dengan pola nilai berupa kuadrat bilangan bulat.
+
 - Contoh: 1,4,9,16,25,…
-- Rumus suku ke-n: $$𝑈_𝑛=𝑛^2$$
+
+- Rumus suku ke-n:
+
+ $$
+ 𝑈_𝑛=𝑛^2
+ $$
 
 
 #### Deret Bilangan Kubik
 Deret dengan pola nilai berupa kubik bilangan bulat.
+
 - Contoh: 1,8,27,64,125,…
-- Rumus suku ke-n:$$𝑈_𝑛=𝑛^3$$
+
+- Rumus suku ke-n:
+
+$$
+𝑈_𝑛=𝑛^3
+$$
 
 #### Deret Fibonacci
 Deret dengan pola di mana setiap suku merupakan jumlah dua suku sebelumnya.
 - Contoh: 0,1,1,2,3,5,8,…
-- Rumus suku ke -n (rekursif): $$ 𝐹_𝑛=𝐹_(𝑛−1)+𝐹_(𝑛−2),𝐹_0=0,𝐹_1=1$$
+- Rumus suku ke -n (rekursif):
+$$
+𝐹_𝑛=𝐹_(𝑛−1)+𝐹_(𝑛−2),𝐹_0=0,𝐹_1=1
+$$
 
 
 ### Penjumlahan Deretan
@@ -115,6 +150,7 @@ Di dalam algoritma, kita perlu menghitung berapa kali suatu operasi tertentu dil
 Contoh: $\sum_{i=1}^4 \sum_{j=1}^3 i j$
 
 Untuk menghitung sumasi ganda, mula-mula ekspansi sumasi terdalam, lalu dilanjukan dengan sumasi terluar:
+
 $$
 \sum_{i=1}^4 \sum_{j=1}^3 i j=\sum_{i=1}^4(i+2 i+3 i)=\sum_{i=1}^4 6 i=6+12+18+24=60
 $$
@@ -139,6 +175,7 @@ Fungsi rekursif didefinisikan oleh dua bagian:
 * Berisi kaidah untuk menemukan nilai fungsi pada suatu input dari nilai-nilai lainnya pada input yang lebih kecil. 
 
 Contoh : Misalkan $f$ didefinsikan secara rekusif sbb
+
 $$
 f(n)=\left\{\begin{array}{cll}
 3 & , n=0 & \text { basis } \\
@@ -147,6 +184,7 @@ f(n)=\left\{\begin{array}{cll}
 $$
 
 Tentukan nilai $\mathrm{f}(4)$ !
+
 $$
 \text { Solusi: } \quad \begin{aligned}
 & f(4)=2 f(3)+4 \\
@@ -161,7 +199,8 @@ $$
 \end{aligned}
 $$
 
-$$\begin{aligned}
+$$
+\begin{aligned}
 &\text { Cara lain menghitungnya: }\\
 &\begin{aligned}
 & \mathrm{f}(0)=3 \\
@@ -171,43 +210,5 @@ $$\begin{aligned}
 & \mathrm{f}(4)=2 \mathrm{f}(3)+4=2 \cdot 52+4=108
 \end{aligned}\\
 &\text { Jadi, } f(4)=108
-\end{aligned}$$
-
-### Latihan
-
-1. Definisikan an secara rekursif , yang dalam hal ini a adalah bilangan riil tidak-nol dan n adalah bilangan bulat tidak-negatif.
-
-2. Nyatakan a x b secara rekursif, yang dalam hal ini a dan b adalah bilangan bulat positif.
-
-Solusi : 
-
-$1 \cdot a^n=\underbrace{a \cdot a \cdot a \cdot \ldots a}_{n \mathrm{kali}}=a \cdot \underbrace{a \cdot a \cdot a \cdot \ldots a}_{n-1 \mathrm{kali}}=a \cdot a^{n-1}$
-sehingga:
+\end{aligned}
 $$
-a^n=\left\{\begin{array}{cc}
-1 & , n=0 \\
-a \cdot a^{n-1} & , n>0
-\end{array}\right.
-$$
-2.
-$$
-\begin{aligned}
-a \cdot b & =\underbrace{b+b+b+\ldots+b}_{a \text { kali }} \\
-& =b+\underbrace{b+b+\ldots+b}_{a-1 \mathrm{kali}} \\
-& =b+(a-1) b
-\end{aligned} \longrightarrow a \cdot b=\left\{\begin{array}{cc}
-b & , a=1 \\
-b+(a-1) b & , a>1
-\end{array}\right. \text {. }
-$$
-
-
-
-
-
-
-
-
-
-
-

@@ -510,48 +510,82 @@ document.write(`
 <li><p>Probabilitas <span class="math notranslate nohighlight">\(P(\)</span> Usia Paruh Baya <span class="math notranslate nohighlight">\(\mid H)\)</span> :</p></li>
 </ol>
 <ul class="simple">
-<li><p>Dari 4 data Hipertensi, Usia Paruh Baya muncul 1 kali (Baris 4).</p></li>
-<li><p><span class="math notranslate nohighlight">\(P(\)</span> Usia Paruh Baya <span class="math notranslate nohighlight">\(\mid H)=1 / 4=0.25\)</span></p></li>
+<li><p>Dari 4 data Hipertensi, Usia Paruh Baya muncul 1 kali (Baris 4).
+$<span class="math notranslate nohighlight">\(
+P(\)</span> Usia Paruh Baya <span class="math notranslate nohighlight">\(\mid H)=1 / 4=0.25
+\)</span>$</p></li>
 </ul>
 <ol class="arabic simple" start="2">
 <li><p>Probabilitas <span class="math notranslate nohighlight">\(P(\)</span> Sangat Tinggi <span class="math notranslate nohighlight">\(\mid H)\)</span> :</p></li>
 </ol>
 <ul class="simple">
-<li><p>Dari 4 data Hipertensi (H), Tekanan Darah Sangat Tinggi muncul 1 kali.
-<span class="math notranslate nohighlight">\(P(\text { Sangat Tinggi } \mid H)=\frac{1+1}{4+3}=\frac{2}{7} \approx 0.286\)</span></p></li>
+<li><p>Dari 4 data Hipertensi (H), Tekanan Darah Sangat Tinggi muncul 1 kali.</p></li>
 </ul>
+<div class="math notranslate nohighlight">
+\[
+P(\text { Sangat Tinggi } \mid H)=\frac{1+1}{4+3}=\frac{2}{7} \approx 0.286
+\]</div>
 <ol class="arabic simple" start="3">
 <li><p>Probabilitas <span class="math notranslate nohighlight">\(P\)</span> (Usia Paruh Baya <span class="math notranslate nohighlight">\(\mid T)\)</span> :</p></li>
 </ol>
 <ul class="simple">
-<li><p>Dari 4 data Tidak Hipertensi (T), Usia Paruh Baya muncul 1 kali.
-<span class="math notranslate nohighlight">\(P(\text { Paruh Baya } \mid T)=\frac{\text { Frekuensi Paruh Baya pada } \mathrm{T}}{\text { Total Frekuensi } \mathrm{T}}=\frac{1}{4}=0.25\)</span></p></li>
+<li><p>Dari 4 data Tidak Hipertensi (T), Usia Paruh Baya muncul 1 kali.</p></li>
 </ul>
+<div class="math notranslate nohighlight">
+\[
+P(\text { Paruh Baya } \mid T)=\frac{\text { Frekuensi Paruh Baya pada } \mathrm{T}}{\text { Total Frekuensi } \mathrm{T}}=\frac{1}{4}=0.25
+\]</div>
 <ol class="arabic simple" start="4">
 <li><p>Probabilitas <span class="math notranslate nohighlight">\(P(\)</span> Sangat Tinggi <span class="math notranslate nohighlight">\(\mid T)\)</span> :</p></li>
 </ol>
 <ul class="simple">
-<li><p>Dari 4 data Tidak Hipertensi (T), Tekanan Darah Sangat Tinggi muncul 0 kali.
-<span class="math notranslate nohighlight">\(P(\text { Sangat Tinggi } \mid T)=\frac{0+1}{4+3}=\frac{1}{7} \approx 0.143\)</span></p></li>
+<li><p>Dari 4 data Tidak Hipertensi (T), Tekanan Darah Sangat Tinggi muncul 0 kali.</p></li>
 </ul>
+<div class="math notranslate nohighlight">
+\[
+P(\text { Sangat Tinggi } \mid T)=\frac{0+1}{4+3}=\frac{1}{7} \approx 0.143
+\]</div>
 <p><strong>Probabilitas Posterior (Naive Bayes)</strong></p>
 <ol class="arabic simple">
-<li><p>Untuk Hipertensi (H):
-<span class="math notranslate nohighlight">\(P(H \mid \text { Paruh Baya, Sangat Tinggi })=P(\text { Paruh Baya } \mid H) \cdot P(\text { Sangat Tinggi } \mid H) \cdot P(H)\)</span>
-Substitusi nilai:
-<span class="math notranslate nohighlight">\(P(H \mid \ldots)=0.25 \cdot 0.286 \cdot 0.5=0.03575\)</span></p></li>
-<li><p>Untuk Tidak Hipertensi (T):
-<span class="math notranslate nohighlight">\(P(T \mid \text { Paruh Baya, Sangat Tinggi })=P(\text { Paruh Baya } \mid T) \cdot P(\text { Sangat Tinggi } \mid T) \cdot P(T)\)</span></p></li>
+<li><p>Untuk Hipertensi (H):</p></li>
 </ol>
-<p>Substitusi nilai:
-<span class="math notranslate nohighlight">\(P(T \mid \ldots)=0.25 \cdot 0.143 \cdot 0.5=0.017875\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+P(H \mid \text { Paruh Baya, Sangat Tinggi })=P(\text { Paruh Baya } \mid H) \cdot P(\text { Sangat Tinggi } \mid H) \cdot P(H)
+\]</div>
+<p>Substitusi nilai:</p>
+<div class="math notranslate nohighlight">
+\[
+P(H \mid \ldots)=0.25 \cdot 0.286 \cdot 0.5=0.03575
+\]</div>
+<ol class="arabic simple" start="2">
+<li><p>Untuk Tidak Hipertensi (T):</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+P(T \mid \text { Paruh Baya, Sangat Tinggi })=P(\text { Paruh Baya } \mid T) \cdot P(\text { Sangat Tinggi } \mid T) \cdot P(T)
+\]</div>
+<p>Substitusi nilai:</p>
+<div class="math notranslate nohighlight">
+\[
+P(T \mid \ldots)=0.25 \cdot 0.143 \cdot 0.5=0.017875
+\]</div>
 <p><strong>Normalisasi</strong>
-Untuk menghitung probabilitas akhir:
-<span class="math notranslate nohighlight">\(\text { Total }=P(H \mid \ldots)+P(T \mid \ldots)=0.03575+0.017875=0.053625\)</span></p>
-<p>Probabilitas Hipertensi (H):
-<span class="math notranslate nohighlight">\(P(H \mid \ldots)=\frac{0.03575}{0.053625} \approx 0.666(66.6 \%)\)</span></p>
-<p>Probabilitas Tidak Hipertensi ( T ):
-<span class="math notranslate nohighlight">\(P(T \mid \ldots)=\frac{0.017875}{0.053625} \approx 0.333(33.3 \%)\)</span></p>
+Untuk menghitung probabilitas akhir:</p>
+<div class="math notranslate nohighlight">
+\[
+\text { Total }=P(H \mid \ldots)+P(T \mid \ldots)=0.03575+0.017875=0.053625
+\]</div>
+<p>Probabilitas Hipertensi (H):</p>
+<div class="math notranslate nohighlight">
+\[
+P(H \mid \ldots)=\frac{0.03575}{0.053625} \approx 0.666(66.6 \%)
+\]</div>
+<p>Probabilitas Tidak Hipertensi ( T ):</p>
+<div class="math notranslate nohighlight">
+\[
+P(T \mid \ldots)=\frac{0.017875}{0.053625} \approx 0.333(33.3 \%)
+\]</div>
 <p>**Kesimpulan : **</p>
 <ul class="simple">
 <li><p>Probabilitas seseorang dengan <strong>usia paruh baya</strong> dan <strong>tekanan darah sangat tinggi</strong> mengalami <strong>Hipertensi</strong> adalah 66.6%.</p></li>
@@ -563,7 +597,10 @@ Untuk menghitung probabilitas akhir:
 <p>Teorema Bayes
 Teorema Bayes digunakan untuk menghitung probabilitas posterior <span class="math notranslate nohighlight">\((P(H \mid X))\)</span>  berdasarkan probabilitas prior dan probabilitas kondisional.</p>
 <p>Rumus umum:</p>
-<p><span class="math notranslate nohighlight">\(P(H \mid X)=\frac{P(X \mid H) \cdot P(H)}{P(X)}\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+P(H \mid X)=\frac{P(X \mid H) \cdot P(H)}{P(X)}
+\]</div>
 <p>Di mana:</p>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(\quad P(H \mid X)\)</span> : Probabilitas seseorang memiliki Hipertensi (H) diberikan data <span class="math notranslate nohighlight">\(X\)</span> (fitur yang diamati seperti Usia Paruh Baya dan Tekanan Darah Sangat Tinggi).</p></li>
@@ -586,46 +623,52 @@ Kita ingin menghitung probabilitas posterior untuk:</p>
 <li><p>Probabilitas kondisional dihitung menggunakan Laplace Smoothing.</p></li>
 </ul>
 <p><strong>Langkah 1</strong>: Hitung <span class="math notranslate nohighlight">\(P(X \mid H)\)</span> dan <span class="math notranslate nohighlight">\(P(X \mid T)\)</span></p>
-<p>Untuk <span class="math notranslate nohighlight">\(P(X \mid H)\)</span> :
-<span class="math notranslate nohighlight">\(
+<p>Untuk <span class="math notranslate nohighlight">\(P(X \mid H)\)</span> :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
 \begin{gathered}
 P(X \mid H)=P(\text { Paruh Baya } \mid H) \cdot P(\text { Sangat Tinggi } \mid H) \\
 P(X \mid H)=0.25 \cdot 0.286=0.0715
 \end{gathered}
-\)</span></p>
-<p>Untuk <span class="math notranslate nohighlight">\(P(X \mid T)\)</span> :
-<span class="math notranslate nohighlight">\(
+\end{split}\]</div>
+<p>Untuk <span class="math notranslate nohighlight">\(P(X \mid T)\)</span> :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
 \begin{gathered}
 P(X \mid T)=P(\text { Paruh Baya } \mid T) \cdot P(\text { Sangat Tinggi } \mid T) \\
 P(X \mid T)=0.25 \cdot 0.143=0.03575
 \end{gathered}
-\)</span></p>
-<p><strong>Langkah 2</strong>: Hitung Probabilitas Prior <span class="math notranslate nohighlight">\((P(H)\)</span> dan <span class="math notranslate nohighlight">\(P(T)\)</span> )
-<span class="math notranslate nohighlight">\(
+\end{split}\]</div>
+<p><strong>Langkah 2</strong>: Hitung Probabilitas Prior <span class="math notranslate nohighlight">\((P(H)\)</span> dan <span class="math notranslate nohighlight">\(P(T)\)</span> )</p>
+<div class="math notranslate nohighlight">
+\[
 P(H)=0.5, \quad P(T)=0.5
-\)</span></p>
-<p><strong>Langkah 3</strong>: Hitung <span class="math notranslate nohighlight">\(P(X)\)</span> (Normalisasi Total Probabilitas)
-<span class="math notranslate nohighlight">\(
+\]</div>
+<p><strong>Langkah 3</strong>: Hitung <span class="math notranslate nohighlight">\(P(X)\)</span> (Normalisasi Total Probabilitas)</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
 \begin{gathered}
 P(X)=P(X \mid H) \cdot P(H)+P(X \mid T) \cdot P(T) \\
 P(X)=(0.0715 \cdot 0.5)+(0.03575 \cdot 0.5)=0.03575+0.017875=0.053625
 \end{gathered}
-\)</span></p>
+\end{split}\]</div>
 <p><strong>Langkah 4</strong>: Hitung Posterior Menggunakan Teorema Bayes</p>
-<p>Untuk Hipertensi <span class="math notranslate nohighlight">\((P(H \mid X)\)</span> ):
-<span class="math notranslate nohighlight">\(
+<p>Untuk Hipertensi <span class="math notranslate nohighlight">\((P(H \mid X)\)</span> ):</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
 \begin{gathered}
 P(H \mid X)=\frac{P(X \mid H) \cdot P(H)}{P(X)} \\
 P(H \mid X)=\frac{0.0715 \cdot 0.5}{0.053625}=\frac{0.03575}{0.053625} \approx 0.666(66.6 \%)
 \end{gathered}
-\)</span></p>
-<p>Untuk Tidak Hipertensi <span class="math notranslate nohighlight">\((P(T \mid X)\)</span> ):
-<span class="math notranslate nohighlight">\(
+\end{split}\]</div>
+<p>Untuk Tidak Hipertensi <span class="math notranslate nohighlight">\((P(T \mid X)\)</span> ):</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
 \begin{gathered}
 P(T \mid X)=\frac{P(X \mid T) \cdot P(T)}{P(X)} \\
 P(T \mid X)=\frac{0.03575 \cdot 0.5}{0.053625}=\frac{0.017875}{0.053625} \approx 0.333(33.3 \%)
 \end{gathered}
-\)</span></p>
+\end{split}\]</div>
 <p><strong>Kesimpulan</strong></p>
 <ul class="simple">
 <li><p>Probabilitas Hipertensi <span class="math notranslate nohighlight">\((P(H \mid X)\)</span> ): 66.6%.</p></li>

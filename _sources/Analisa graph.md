@@ -30,9 +30,16 @@ Degree centrality adalah jumlah edge yang terkoneksi pada suatu node yang mewaki
 - hanya sebagian kecil node yang memiliki derajat tinggi dalam jaringan
 
 
-Degree Centrality = $C_D\left(v_i\right)=d_i=\sum_i A_{i j}$
+Degree Centrality = 
 
-Normalisasi Degree Centrality = $ C_D^{\prime}\left(v_i\right)=d_i /(n-1)$
+$$
+C_D\left(v_i\right)=d_i=\sum_i A_{i j}
+$$
+
+Normalisasi Degree Centrality = 
+$$
+C_D^{\prime}\left(v_i\right)=d_i /(n-1)
+$$
 
 
 ### Closeness centrality
@@ -40,9 +47,17 @@ Normalisasi Degree Centrality = $ C_D^{\prime}\left(v_i\right)=d_i /(n-1)$
 Closeness centrality adalah nilai kedekatan antara suatu node dengan node lain dalam jaringan dengan menhitung rata rata dari jarak relasi node-node tersebut. skor closeness centrality mewakili kecepatan dalm penyebaran informasi
 
 
-Average Distance : $D_{\text {avg }}\left(v_i\right)=\frac{1}{n-1} \sum_{j \neq i}^n g\left(v_i, v_j\right)$
+Average Distance : 
 
-Closeness Centrality : $C_C\left(v_i\right)=\left[\frac{1}{n-1} \sum_{j \neq i}^n g\left(v_i, v_j\right)\right]^{-1}=\frac{n-1}{\sum_{j \neq i}^n g\left(v_i, v_j\right)}$
+$$
+D_{\text {avg }}\left(v_i\right)=\frac{1}{n-1} \sum_{j \neq i}^n g\left(v_i, v_j\right)
+$$
+
+Closeness Centrality : 
+
+$$
+C_C\left(v_i\right)=\left[\frac{1}{n-1} \sum_{j \neq i}^n g\left(v_i, v_j\right)\right]^{-1}=\frac{n-1}{\sum_{j \neq i}^n g\left(v_i, v_j\right)}
+$$
 
 ### Betweenness Centrality
 
