@@ -30,9 +30,9 @@ Degree centrality adalah jumlah edge yang terkoneksi pada suatu node yang mewaki
 - hanya sebagian kecil node yang memiliki derajat tinggi dalam jaringan
 
 
-Degree Centrality = $$C_D\left(v_i\right)=d_i=\sum_i A_{i j}$$
-Normalisasi Degree Centrality = 
-$$ C_D^{\prime}\left(v_i\right)=d_i /(n-1)$$
+Degree Centrality = $C_D\left(v_i\right)=d_i=\sum_i A_{i j}$
+
+Normalisasi Degree Centrality = $ C_D^{\prime}\left(v_i\right)=d_i /(n-1)$
 
 
 ### Closeness centrality
