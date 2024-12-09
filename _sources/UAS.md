@@ -3,7 +3,7 @@ title: UAS
 
 ---
 
-Soal No 1
+# UAS Soal No 1
 
 | No | P | Q | R | S | $P\Longrightarrow Q$ |$R\Longrightarrow S$ |$(P\Longrightarrow Q) \Longrightarrow(R\Longrightarrow S)$ |
 | -------- | -------- | -------- |-------- |-------- |-------- |-------- |-------- |
@@ -17,7 +17,7 @@ Soal No 1
 | 8 | F | F | T | T | T | T | T |
 
 
-Soal No 2
+# UAS Soal No 2
 
 ![](https://cdn.mathpix.com/snip/images/3YJ2eUWQlO_lAO99gI4LbA61S3_lEOB8nfONcw23xRA.original.fullsize.png)
 
