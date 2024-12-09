@@ -3,8 +3,6 @@ title: UAS
 
 ---
 
-
-
 # Soal No 1
 
 | No | P | Q | R | S | $P\Longrightarrow Q$ |$R\Longrightarrow S$ |$(P\Longrightarrow Q) \Longrightarrow(R\Longrightarrow S)$ |
