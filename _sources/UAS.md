@@ -24,6 +24,8 @@ title: UAS
 ![](https://cdn.mathpix.com/snip/images/3YJ2eUWQlO_lAO99gI4LbA61S3_lEOB8nfONcw23xRA.original.fullsize.png)
 
 1. Closeness centrality G
+
+
 $$
 C_C\left(v_i\right)=\left[\frac{1}{n-1} \sum_{j \neq i}^n d\left(v_i, v_j\right)\right]^{-1}=\frac{n-1}{\sum_{j \neq i}^n d\left(v_i, v_j\right)}
 $$
@@ -48,6 +50,24 @@ C_C\left(G\right)=\frac{n-1}{\sum_{j \neq i}^n d\left(v_i, v_j\right)}= \frac{7
 $$
 
 3. Betweenness Centrality F
+
+Jalur terpendek yang melewati F yaitu :
+
+(A,G)= A,C,F,G 
+
+(C,G)= C,F,G 
+
+(D,G)= D,C,F,G
+
+(E,G)= E,C,F,G
+
+total ada 4 pasangan yang jalurnya melewati F
+
+Normalisasi Betweenness Centrality :
+
+$$
+C_B^{\prime}(F)=\frac{C_B(F)}{(n-1)(n-2) / 2} = \frac{4}{(7-1)(7-2) / 2}= \frac{4}{6 * 5 / 2} =\frac{4}{15}= 0,2667
+$$
 
 
 
